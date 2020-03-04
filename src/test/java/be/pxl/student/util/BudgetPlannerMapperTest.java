@@ -52,7 +52,7 @@ class BudgetPlannerMapperTest {
     }
 
     @Test
-    void it_should_map_line_to_account_object() {
+    void it_should_map_line_to_account_object() throws ParseException, BudgetPlannerException {
         Account expectedAccount = new Account("Jos", "BE69771770897312");
         Account lineToAccount = mapper.mapDataLineToAccount(testDataLine);
 
@@ -69,7 +69,9 @@ class BudgetPlannerMapperTest {
                 "Ut ut necessitatibus itaque ullam."
         );
 
-        
+        Payment actualPayment = mapper.mapItemsToPayment(testDataLine.split(","));
+
+        assertEquals(expectedPayment, actualPayment);
     }
 
     @Test
