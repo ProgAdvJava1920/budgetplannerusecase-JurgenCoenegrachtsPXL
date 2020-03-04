@@ -4,16 +4,26 @@ import java.util.Date;
 
 public class Payment {
 
+    private String IBAN;
     private Date date;
     private float amount;
     private String currency;
     private String detail;
 
-    public Payment(Date date, float amount, String currency, String detail) {
+    public Payment(String IBAN, Date date, float amount, String currency, String detail) {
+        this.IBAN = IBAN;
         this.date = date;
         this.amount = amount;
         this.currency = currency;
         this.detail = detail;
+    }
+
+    public String getIBAN() {
+        return IBAN;
+    }
+
+    public void setIBAN(String IBAN) {
+        this.IBAN = IBAN;
     }
 
     public Date getDate() {
@@ -50,8 +60,9 @@ public class Payment {
 
     @Override
     public String toString() {
-        return "{" +
-                "date=" + date +
+        return "Payment{" +
+                "IBAN='" + IBAN + '\'' +
+                ", date=" + date +
                 ", amount=" + amount +
                 ", currency='" + currency + '\'' +
                 ", detail='" + detail + '\'' +
