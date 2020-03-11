@@ -7,9 +7,16 @@ import java.util.stream.Collectors;
 
 public class Account {
 
-    private String name;
+    private int id;
     private String IBAN;
+    private String name;
     private List<Payment> payments = new ArrayList<>();
+
+    public Account(int id, String IBAN, String name) {
+        this.id = id;
+        this.IBAN = IBAN;
+        this.name = name;
+    }
 
     public Account() {
     }

@@ -5,6 +5,8 @@ import java.util.Objects;
 
 public class Payment {
 
+    // accountID
+    // ID
     private String IBAN;
     private Date date;
     private float amount;
