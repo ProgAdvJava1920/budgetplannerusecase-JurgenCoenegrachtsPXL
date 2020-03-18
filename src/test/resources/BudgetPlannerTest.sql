@@ -56,3 +56,4 @@ ENGINE = InnoDB;
 
 
 INSERT INTO `Account` VALUES (1, 'dummyIBAN', 'dummyName');
+INSERT INTO `Account` VALUES (2, 'dummyIBAN2', 'dummyName2');
