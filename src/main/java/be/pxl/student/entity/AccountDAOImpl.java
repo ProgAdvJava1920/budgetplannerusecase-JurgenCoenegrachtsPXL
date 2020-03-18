@@ -3,8 +3,12 @@ package be.pxl.student.entity;
 import java.sql.*;
 import java.util.List;
 
-public class AccountDAOImpl implements AccountDAO {
+public class AccountDAOImpl implements DAO<Account, AccountException> {
+    public static final String CREATE = "";
+    public static final String GET_ALL = "SELECT * FROM Account";
     public static final String SELECT_BY_ID = "SELECT * FROM Account WHERE id = ?";
+    public static final String UPDATE = "";
+    public static final String DLETE = "";
     private String url;
 
     private Connection getConnection() throws SQLException {
@@ -16,7 +20,7 @@ public class AccountDAOImpl implements AccountDAO {
     }
 
     @Override
-    public Account Create(Account account) throws AccountException {
+    public Account create(Account account) throws AccountException {
         throw new AccountException("Not yet implemented");
     }
 
@@ -42,17 +46,24 @@ public class AccountDAOImpl implements AccountDAO {
             }
         } catch (SQLException e) {
             // exception gooien met informatie en originele exception meegeven voor debuggen
+            // stack trace blijft dan volledig
             throw new AccountException(String.format("Exception while retrieveing account with id [%d]", id), e);
         }
     }
 
     @Override
-    public Account Update(Account account) throws AccountException {
+    public Account update(Account account) throws AccountException {
+        try(PreparedStatement preparedStatement = getConnection().prepareStatement(UPDATE)) {
+            preparedStatement.setString(1, account.getIBAN());
+        } catch (SQLException e) {
+
+        }
         throw new AccountException("Not yet implemented");
     }
 
     @Override
-    public Account Delete(int id) throws AccountException {
+    public Account delete(Account account) throws AccountException {
         throw new AccountException("Not yet implemented");
     }
+
 }

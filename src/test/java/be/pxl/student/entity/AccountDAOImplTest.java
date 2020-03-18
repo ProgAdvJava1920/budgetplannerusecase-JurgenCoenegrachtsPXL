@@ -24,7 +24,7 @@ class AccountDAOImplTest {
 
     @Test
     void it_should_return_account_with_id_1() throws AccountException {
-        AccountDAO dao = new AccountDAOImpl(DB_URL);
+        DAO<Account, AccountException> dao = new AccountDAOImpl(DB_URL);
         Account account = dao.getById(1);
 
         Account expectedAccount = new Account(1, "dummyIBAN", "dummyName");
