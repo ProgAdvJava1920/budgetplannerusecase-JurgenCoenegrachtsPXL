@@ -16,8 +16,8 @@ class AccountDAOTest {
     // INIT: run script voor te beginnen
     private static final String DB_URL = "jdbc:h2:mem:test;MODE=MySQL;INIT=RUNSCRIPT FROM 'classpath:BudgetPlannerTest.sql'";
 
-    private AccountDAO accountDAO;
     private DAOManager manager;
+    private AccountDAO accountDAO;
 
     @BeforeEach
     void setUp() {
@@ -36,15 +36,23 @@ class AccountDAOTest {
 
         Account actualAccount = accountDAO.create(expectedAccount);
 
-        assertEquals(expectedAccount, actualAccount);;
+        assertEquals(expectedAccount, actualAccount);
+    }
+
+    @Test
+    void it_should_set_id_of_new_account() throws AccountException {
+        Account expectedAccount = new Account("nieuwAccount", "nieuweIBAN");
+
+        Account actualAccount = accountDAO.create(expectedAccount);
+
         assertNotEquals(0, actualAccount.getId());
     }
 
     @Test
-    void it_should_return_2_items() throws AccountException {
+    void it_should_return_3_items() throws AccountException {
         List<Account> accounts = accountDAO.getAll();
 
-        assertEquals(2, accounts.size());
+        assertEquals(3, accounts.size());
     }
 
     @Test

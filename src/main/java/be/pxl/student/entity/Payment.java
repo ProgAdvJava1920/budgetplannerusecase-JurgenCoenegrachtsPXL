@@ -24,6 +24,16 @@ public class Payment {
         this.detail = detail;
     }
 
+    public Payment(int accountId, int counterAccountId, String IBAN, Date date, float amount, String currency, String detail) {
+        this.accountId = accountId;
+        this.counterAccountId = counterAccountId;
+        this.IBAN = IBAN;
+        this.date = date;
+        this.amount = amount;
+        this.currency = currency;
+        this.detail = detail;
+    }
+
     public Payment(String IBAN, Date date, float amount, String currency, String detail) {
         this.IBAN = IBAN;
         this.date = date;
@@ -34,6 +44,10 @@ public class Payment {
 
     public int getId() {
         return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getAccountId() {

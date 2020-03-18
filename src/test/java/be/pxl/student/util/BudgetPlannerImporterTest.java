@@ -16,8 +16,8 @@ class BudgetPlannerImporterTest {
     }
 
     @Test
-    void read_csv_file_should_return_list_of_size_2 () throws BudgetPlannerException {
-        assertEquals(2, BudgetPlannerImporter.readCsvFile(csvFilePath).size());
+    void read_csv_file_should_return_list_of_size_3 () throws BudgetPlannerException {
+        assertEquals(3, BudgetPlannerImporter.readCsvFile(csvFilePath).size());
     }
 
     @Test
