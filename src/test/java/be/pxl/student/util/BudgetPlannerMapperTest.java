@@ -62,7 +62,6 @@ class BudgetPlannerMapperTest {
     @Test
     void it_should_map_line_to_payment() throws ParseException {
         Payment expectedPayment = new Payment(
-                "BE17795215960626",
                 mapper.convertToDate("Thu Feb 13 05:47:35 CET 2020"),
                 265.8f,
                 "EUR",

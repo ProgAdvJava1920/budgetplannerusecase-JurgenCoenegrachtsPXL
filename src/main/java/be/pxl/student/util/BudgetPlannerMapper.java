@@ -81,7 +81,7 @@ public class BudgetPlannerMapper {
 
     public Payment mapItemsToPayment(String[] items) throws ParseException {
         return new Payment(
-                items[2],                       // IBAN
+                // IBAN
                 convertToDate(items[3]),        // transaction date
                 Float.parseFloat(items[4]),     // amount
                 items[5],                       // currency

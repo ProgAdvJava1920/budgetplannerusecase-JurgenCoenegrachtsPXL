@@ -1,15 +1,21 @@
 package be.pxl.student.entity;
 
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
+@Entity
+@NamedQuery(name="findAll", query = "SELECT a FROM Account as a")
 public class Account {
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String IBAN;
     private String name;
+
+    @OneToMany(mappedBy = "account")
     private List<Payment> payments = new ArrayList<>();
 
     public Account(int id, String IBAN, String name) {
