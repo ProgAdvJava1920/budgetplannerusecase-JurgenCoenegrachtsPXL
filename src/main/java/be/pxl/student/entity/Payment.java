@@ -5,7 +5,7 @@ import java.util.Date;
 import java.util.Objects;
 
 @Entity
-@NamedQuery(name="findAll", query = "SELECT p FROM Payment as p")
+@NamedQuery(name="payment.findAll", query = "SELECT p FROM Payment as p")
 public class Payment {
 
     @Id

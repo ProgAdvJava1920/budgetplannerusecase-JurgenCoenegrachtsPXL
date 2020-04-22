@@ -7,7 +7,7 @@ import java.util.Objects;
 import java.util.stream.Collectors;
 
 @Entity
-@NamedQuery(name="findAll", query = "SELECT a FROM Account as a")
+@NamedQuery(name="account.findAll", query = "SELECT a FROM Account as a")
 public class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

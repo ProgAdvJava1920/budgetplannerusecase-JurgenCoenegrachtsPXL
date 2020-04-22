@@ -19,7 +19,7 @@ public class AccountJPA implements DAO<Account, AccountException> {
     }
 
     @Override
-    public Account create(Account account) throws AccountException {
+    public Account create(Account account) {
         entityManager.getTransaction().begin();
         entityManager.persist(account);
         entityManager.getTransaction().commit();
@@ -27,18 +27,18 @@ public class AccountJPA implements DAO<Account, AccountException> {
     }
 
     @Override
-    public Account getById(int id) throws AccountException {
+    public Account getById(int id) {
         return entityManager.find(Account.class, id);
     }
 
     @Override
-    public List<Account> getAll() throws AccountException {
-        TypedQuery<Account> query = entityManager.createNamedQuery("findAll", Account.class);
+    public List<Account> getAll() {
+        TypedQuery<Account> query = entityManager.createNamedQuery("account.findAll", Account.class);
         return query.getResultList();
     }
 
     @Override
-    public Account update(Account account) throws AccountException {
+    public Account update(Account account) {
         entityManager.getTransaction().begin();
         entityManager.merge(account);
         //entityManager.persist(account);
@@ -48,7 +48,7 @@ public class AccountJPA implements DAO<Account, AccountException> {
     }
 
     @Override
-    public Account delete(Account account) throws AccountException {
+    public Account delete(Account account) {
         entityManager.getTransaction().begin();
         Account attachedAccount = entityManager.find(Account.class, account.getId());
         entityManager.remove(attachedAccount);

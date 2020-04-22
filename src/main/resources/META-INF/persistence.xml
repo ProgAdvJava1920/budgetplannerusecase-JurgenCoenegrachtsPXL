@@ -9,8 +9,10 @@
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/budgetplanner?useSSL=false"/>
             <property name="javax.persistence.jdbc.user" value="user"/>
             <property name="javax.persistence.jdbc.password" value="password"/>
-            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.show_sql" value="false" /> <!-- show sql queries in console -->
             <property name="hibernate.hbm2ddl.auto" value="update"/>
+
+            <!--<property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>--> <!-- drop and create tables on run -->
         </properties>
     </persistence-unit>
 </persistence>

@@ -16,6 +16,17 @@
 		<maven.compiler.source>11</maven.compiler.source>
 	</properties>
 
+	<build>
+		<finalName>Demo</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.tomee.maven</groupId>
+				<artifactId>tomee-maven-plugin</artifactId>
+				<version>8.0.1</version>
+			</plugin>
+		</plugins>
+	</build>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>

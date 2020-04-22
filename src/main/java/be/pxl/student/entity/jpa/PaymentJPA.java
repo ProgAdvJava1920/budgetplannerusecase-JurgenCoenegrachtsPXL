@@ -19,7 +19,7 @@ public class PaymentJPA implements DAO<Payment, PaymentException> {
     }
 
     @Override
-    public Payment create(Payment payment) throws PaymentException {
+    public Payment create(Payment payment) {
         entityManager.getTransaction().begin();
         entityManager.persist(payment);
         entityManager.getTransaction().commit();
@@ -28,18 +28,18 @@ public class PaymentJPA implements DAO<Payment, PaymentException> {
     }
 
     @Override
-    public Payment getById(int id) throws PaymentException {
+    public Payment getById(int id) {
         return entityManager.find(Payment.class, id);
     }
 
     @Override
-    public List<Payment> getAll() throws PaymentException {
-        TypedQuery<Payment> query = entityManager.createNamedQuery("findAll", Payment.class);
+    public List<Payment> getAll() {
+        TypedQuery<Payment> query = entityManager.createNamedQuery("payment.findAll", Payment.class);
         return query.getResultList();
     }
 
     @Override
-    public Payment update(Payment payment) throws PaymentException {
+    public Payment update(Payment payment) {
         entityManager.getTransaction().begin();
         entityManager.merge(payment);
         entityManager.getTransaction().commit();
@@ -48,7 +48,7 @@ public class PaymentJPA implements DAO<Payment, PaymentException> {
     }
 
     @Override
-    public Payment delete(Payment payment) throws PaymentException {
+    public Payment delete(Payment payment) {
         entityManager.getTransaction().begin();
         Payment attachedPayment = entityManager.find(Payment.class, payment.getId());
         entityManager.remove(attachedPayment);
