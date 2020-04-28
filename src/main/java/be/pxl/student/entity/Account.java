@@ -32,6 +32,10 @@ public class Account {
         this.IBAN = IBAN;
     }
 
+    public Account(String iban) {
+        this.IBAN = iban;
+    }
+
     public int getId() {
         return id;
     }

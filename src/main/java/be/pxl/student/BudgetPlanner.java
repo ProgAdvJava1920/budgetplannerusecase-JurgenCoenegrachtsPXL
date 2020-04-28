@@ -51,7 +51,7 @@ public class BudgetPlanner {
                 counter++;
             }
             logger.info(String.format("Inserted %d accounts into database", counter));
-
+            
             counter = 0;
             for (Account a : accounts) {
                 for (Payment payment : a.getPayments()) {

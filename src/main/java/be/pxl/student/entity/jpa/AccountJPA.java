@@ -4,10 +4,7 @@ import be.pxl.student.entity.Account;
 import be.pxl.student.entity.DAO;
 import be.pxl.student.entity.exception.AccountException;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
-import javax.persistence.TypedQuery;
+import javax.persistence.*;
 import java.util.List;
 
 // normaal gezien moet dit AccountDAO noemen
@@ -20,9 +17,12 @@ public class AccountJPA implements DAO<Account, AccountException> {
 
     @Override
     public Account create(Account account) {
-        entityManager.getTransaction().begin();
+        EntityTransaction transaction = entityManager.getTransaction();
+        transaction.begin();
+
         entityManager.persist(account);
-        entityManager.getTransaction().commit();
+
+        transaction.commit();
         return account;
     }
 
@@ -39,20 +39,25 @@ public class AccountJPA implements DAO<Account, AccountException> {
 
     @Override
     public Account update(Account account) {
-        entityManager.getTransaction().begin();
+        EntityTransaction transaction = entityManager.getTransaction();
+        transaction.begin();
+
         entityManager.merge(account);
         //entityManager.persist(account);
-        entityManager.getTransaction().commit();
+        transaction.commit();
 
         return account;
     }
 
     @Override
     public Account delete(Account account) {
-        entityManager.getTransaction().begin();
+        EntityTransaction transaction = entityManager.getTransaction();
+        transaction.begin();
+
         Account attachedAccount = entityManager.find(Account.class, account.getId());
         entityManager.remove(attachedAccount);
-        entityManager.getTransaction().commit();
+
+        transaction.commit();
         return attachedAccount;
 
         // zorgt voor error: removing a detached instance

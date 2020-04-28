@@ -59,13 +59,23 @@ public class BudgetPlannerMapper {
 
         String name = items[0];
         String iban = items[1];
+        String counterIban = items[2];
 
         // get existing account from map, if it doesn't doesn't exist in the map create a new account
         Account account = accountMap.getOrDefault(iban, new Account(name, iban));
+        if (account.getName() == null) {
+            account.setName(name);
+        }
+
+        // get existing counter account from map, if it doesn't exist, create one
+        Account counterAccount = accountMap.getOrDefault(counterIban, new Account(iban));
+        accountMap.putIfAbsent(counterIban, counterAccount);
 
         //Account account = new Account(name, iban);
-
         Payment payment = mapItemsToPayment(items);
+        payment.setAccount(account);
+        payment.setCounterAccount(counterAccount);
+
         account.getPayments().add(payment);
 
         return account;
