@@ -5,7 +5,7 @@
 	<groupId>be.pxl.student</groupId>
 	<artifactId>BudgetPlanner</artifactId>
 	<version>SNAPSHOT-1.0</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>BudgetPlanner</name>
 	<url>http://maven.apache.org</url>
@@ -17,7 +17,7 @@
 	</properties>
 
 	<build>
-		<finalName>Demo</finalName>
+		<finalName>BudgetPlanner</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.tomee.maven</groupId>

@@ -9,7 +9,7 @@ import java.util.List;
 
 // normaal gezien moet dit AccountDAO noemen
 public class AccountJPA implements DAO<Account, AccountException> {
-    EntityManager entityManager;
+    private EntityManager entityManager;
 
     public AccountJPA(EntityManager entityManager) {
         this.entityManager = entityManager;

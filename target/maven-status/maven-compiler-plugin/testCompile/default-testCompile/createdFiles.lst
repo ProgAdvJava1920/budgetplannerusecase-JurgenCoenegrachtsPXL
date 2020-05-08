@@ -1,0 +1,7 @@
+be\pxl\student\util\BudgetPlannerImporterTest.class
+be\pxl\student\entity\jpa\AccountJPATest.class
+be\pxl\student\entity\jpa\LabelJPATest.class
+be\pxl\student\entity\jpa\PaymentJPATest.class
+be\pxl\student\entity\jdbc\AccountDAOTest.class
+be\pxl\student\entity\jdbc\PaymentDAOTest.class
+be\pxl\student\util\BudgetPlannerMapperTest.class

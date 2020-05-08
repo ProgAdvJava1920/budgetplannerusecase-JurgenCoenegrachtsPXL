@@ -62,3 +62,6 @@ INSERT INTO `Account` VALUES (3, 'dummyIBAN3', 'dummyName3');
 
 INSERT INTO `Payment` VALUES (1, CURRENT_DATE(), 50.0, 'EUR', 'dummyIBAN', 'nothing',  3, 2, null);
 INSERT INTO `Payment` VALUES (2, CURRENT_DATE(), 50.0, 'EUR', 'dummyIBAN2', 'even less', 2, 3, null);
+
+INSERT INTO `Label` VALUES (1, 'dummyName', 'dummyDescription');
+INSERT INTO `Label` VALUES (2, 'otherDummyName', 'dummyDescription');
