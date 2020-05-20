@@ -1,10 +1,12 @@
 package be.pxl.student.rest.resource;
 
+import java.util.Date;
+
 public class NewPaymentResource {
     private float amount;
     private String counterAccount;
     private String currency;
-    private String label;
+    private Date date;
 
     public float getAmount() {
         return amount;
@@ -30,11 +32,11 @@ public class NewPaymentResource {
         this.currency = currency;
     }
 
-    public String getLabel() {
-        return label;
+    public Date getDate() {
+        return date;
     }
 
-    public void setLabel(String label) {
-        this.label = label;
+    public void setDate(Date date) {
+        this.date = date;
     }
 }

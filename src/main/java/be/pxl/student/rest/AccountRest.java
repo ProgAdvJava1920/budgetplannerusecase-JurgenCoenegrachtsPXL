@@ -3,6 +3,7 @@ package be.pxl.student.rest;
 import be.pxl.student.entity.Account;
 import be.pxl.student.entity.Payment;
 import be.pxl.student.entity.jpa.AccountJPA;
+import be.pxl.student.entity.jpa.LabelJPA;
 import be.pxl.student.entity.jpa.PaymentJPA;
 import be.pxl.student.rest.resource.*;
 import org.apache.logging.log4j.LogManager;
@@ -81,9 +82,10 @@ public class AccountRest {
     @GET
     @Path("{accountName}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getPayments(@PathParam("accountName") String accountName) {
+    public Response getPayments(@PathParam("accountName") String accountName, @QueryParam("label")String label) {
         EntityManager entityManager = EntityManagerUtil.createEntityManager();
         AccountJPA accountJPA = new AccountJPA(entityManager);
+        LabelJPA labelJPA = new LabelJPA(entityManager);
 
         // try to find account
         Optional<Account> possibleAccount = accountJPA.getAll()
@@ -93,15 +95,27 @@ public class AccountRest {
 
         entityManager.close();
         if (possibleAccount.isPresent()) {
-            return Response.ok(possibleAccount.get().getPayments()).build();
+            if (label == null) {
+                return Response.ok(possibleAccount.get().getPayments()).build();
+            } else {
+                // get all payments with specified label
+                return Response.status(Response.Status.OK)
+                        .entity(possibleAccount.get()
+                                .getPayments().stream()
+                                .filter(p -> p.getLabel() != null && p.getLabel().getName().equals(label)))
+                        .build();
+            }
+
         } else {
-            return Response.status(Response.Status.NOT_FOUND).build();
+            return Response.status(Response.Status.BAD_REQUEST)
+                    .build();
         }
     }
 
     @POST
     @Path("{accountName}")
     @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
     public Response createPayment(@PathParam("accountName") String senderName, NewPaymentResource newPaymentResource) {
         AccountJPA accountJPA = new AccountJPA(EntityManagerUtil.createEntityManager());
         PaymentJPA paymentJPA = new PaymentJPA(EntityManagerUtil.createEntityManager());
@@ -114,23 +128,38 @@ public class AccountRest {
         if (possibleSender.isPresent()) {
             // find receiver
             Optional<Account> possibleReceiver = accountJPA.getAll().stream()
-                    .filter(account -> account.getName().equals(newPaymentResource.getCounterAccount()))
+                    .filter(account -> account.getIBAN().equals(newPaymentResource.getCounterAccount()))
                     .findFirst();
 
+            Account receiver = null;
             if (possibleReceiver.isPresent()) {
-                // create new payment
-                Payment newPayment = mapNewPaymentToPayment(newPaymentResource, possibleSender.get(), possibleReceiver.get());
-
-                // add to database
-                paymentJPA.create(newPayment);
-
-                // send back created payment
-                return Response.status(Response.Status.CREATED).entity(new PaymentResource(newPayment)).build();
+                receiver = possibleReceiver.get();
             } else {
-                return Response.status(Response.Status.NOT_FOUND).build();
+                // create new receiver
+                receiver = new Account();
+                receiver.setIBAN(newPaymentResource.getCounterAccount());
+                receiver = accountJPA.create(receiver);
             }
+
+            // create new payment
+            Payment newPayment = mapNewPaymentToPayment(newPaymentResource, possibleSender.get(), receiver);
+
+            // set time based on given time
+            if (newPaymentResource.getDate() != null) {
+                newPayment.setDate(newPaymentResource.getDate());
+            } else {
+                newPayment.setDate(Date.from(Instant.now()));
+            }
+
+            // add to database
+            paymentJPA.create(newPayment);
+
+            // send back created payment
+            return Response.status(Response.Status.CREATED)
+                    .entity(new PaymentResource(newPayment))
+                    .build();
         } else {
-            return Response.status(Response.Status.NOT_FOUND).build();
+            return Response.status(Response.Status.BAD_REQUEST).build();
         }
     }
 

@@ -3,6 +3,7 @@ package be.pxl.student.entity.jpa;
 import be.pxl.student.entity.Account;
 import be.pxl.student.entity.DAO;
 import be.pxl.student.entity.exception.AccountException;
+import be.pxl.student.entity.exception.LabelException;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -34,7 +35,7 @@ class AccountJPATest {
     }
 
     @Test
-    void create() throws AccountException {
+    void create() throws AccountException, LabelException {
         Account expectedAccount = new Account();
         expectedAccount.setName("willekeurigeNaam33");
         expectedAccount.setIBAN("ditisgeenIBAN");
@@ -68,7 +69,7 @@ class AccountJPATest {
     }
 
     @Test
-    void delete() throws AccountException {
+    void delete() throws AccountException, LabelException {
         Account expectedAccount = new Account(1, "dummyIBAN", "dummyName");
         dao.delete(expectedAccount);
         entityManager.clear(); // cache leegmaken

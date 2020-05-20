@@ -1,12 +1,14 @@
 package be.pxl.student.entity;
 
+import be.pxl.student.entity.exception.LabelException;
+
 import java.util.List;
 
 public interface DAO<T, E extends Exception> {
     // CRUD principe
 
     // Create
-    T create(T t) throws E;
+    T create(T t) throws E, LabelException;
 
     // Read
     T getById(int id) throws E;
@@ -16,5 +18,5 @@ public interface DAO<T, E extends Exception> {
     T update(T t) throws E;
 
     // Delete
-    T delete(T t) throws E;
+    T delete(T t) throws E, LabelException;
 }

@@ -24,6 +24,9 @@ public class Payment {
     private String currency;
     private String detail;
 
+    @ManyToOne
+    private Label label;
+
     public Payment() {
     }
 
@@ -105,6 +108,14 @@ public class Payment {
 
     public void setDetail(String detail) {
         this.detail = detail;
+    }
+
+    public Label getLabel() {
+        return label;
+    }
+
+    public void setLabel(Label label) {
+        this.label = label;
     }
 
     @Override

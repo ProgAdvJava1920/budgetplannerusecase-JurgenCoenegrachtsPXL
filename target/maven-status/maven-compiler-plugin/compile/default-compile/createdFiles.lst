@@ -1,6 +1,7 @@
 be\pxl\student\util\BudgetPlannerImporter.class
 be\pxl\student\entity\exception\AccountException.class
 be\pxl\student\BudgetPlanner.class
+be\pxl\student\rest\resource\NewLabelResource.class
 be\pxl\student\rest\resource\NewPaymentResource.class
 be\pxl\student\entity\exception\AccountNotFoundException.class
 be\pxl\student\entity\exception\LabelException.class
@@ -8,6 +9,7 @@ be\pxl\student\rest\resource\MessageResource.class
 be\pxl\student\rest\EntityManagerUtil.class
 be\pxl\student\rest\AccountRest.class
 be\pxl\student\entity\exception\PaymentException.class
+be\pxl\student\rest\LabelRest.class
 be\pxl\student\util\BudgetPlannerMapper.class
 be\pxl\student\entity\jpa\LabelJPA.class
 be\pxl\student\entity\exception\PaymentNotFoundException.class

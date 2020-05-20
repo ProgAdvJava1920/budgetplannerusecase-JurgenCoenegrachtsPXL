@@ -1,0 +1,163 @@
+20-May-2020 11:04:14.034 INFO [main] jdk.internal.reflect.NativeMethodAccessorImpl.invoke Server version name:   Apache Tomcat (TomEE)/9.0.30 (8.0.1)
+20-May-2020 11:04:14.035 INFO [main] jdk.internal.reflect.NativeMethodAccessorImpl.invoke Server built:          Dec 7 2019 16:42:04 UTC
+20-May-2020 11:04:14.035 INFO [main] jdk.internal.reflect.NativeMethodAccessorImpl.invoke Server version number: 9.0.30.0
+20-May-2020 11:04:14.035 INFO [main] jdk.internal.reflect.NativeMethodAccessorImpl.invoke OS Name:               Windows 10
+20-May-2020 11:04:14.035 INFO [main] jdk.internal.reflect.NativeMethodAccessorImpl.invoke OS Version:            10.0
+20-May-2020 11:04:14.035 INFO [main] jdk.internal.reflect.NativeMethodAccessorImpl.invoke Architecture:          amd64
+20-May-2020 11:04:14.035 INFO [main] jdk.internal.reflect.NativeMethodAccessorImpl.invoke Java Home:             C:\Program Files\Java\jdk-11.0.5
+20-May-2020 11:04:14.035 INFO [main] jdk.internal.reflect.NativeMethodAccessorImpl.invoke JVM Version:           11.0.5+10-LTS
+20-May-2020 11:04:14.035 INFO [main] jdk.internal.reflect.NativeMethodAccessorImpl.invoke JVM Vendor:            Oracle Corporation
+20-May-2020 11:04:14.035 INFO [main] jdk.internal.reflect.NativeMethodAccessorImpl.invoke CATALINA_BASE:         C:\Users\Jurgen\source\repos\budgetplannerusecase-JurgenCoenegrachtsPXL\target\apache-tomee
+20-May-2020 11:04:14.035 INFO [main] jdk.internal.reflect.NativeMethodAccessorImpl.invoke CATALINA_HOME:         C:\Users\Jurgen\source\repos\budgetplannerusecase-JurgenCoenegrachtsPXL\target\apache-tomee
+20-May-2020 11:04:14.057 INFO [main] jdk.internal.reflect.NativeMethodAccessorImpl.invoke Command line argument: -XX:+HeapDumpOnOutOfMemoryError
+20-May-2020 11:04:14.057 INFO [main] jdk.internal.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Dorg.apache.catalina.STRICT_SERVLET_COMPLIANCE=false
+20-May-2020 11:04:14.057 INFO [main] jdk.internal.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Dopenejb.session.manager=org.apache.tomee.catalina.session.QuickSessionManager
+20-May-2020 11:04:14.057 INFO [main] jdk.internal.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Dtomee.remote.support=true
+20-May-2020 11:04:14.058 INFO [main] jdk.internal.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Dopenejb.system.apps=false
+20-May-2020 11:04:14.058 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dtomee.jsp-development=true
+20-May-2020 11:04:14.058 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Djava.util.logging.config.file=C:\Users\Jurgen\source\repos\budgetplannerusecase-JurgenCoenegrachtsPXL\target\apache-tomee\conf\logging.properties
+20-May-2020 11:04:14.058 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -javaagent:C:\Users\Jurgen\source\repos\budgetplannerusecase-JurgenCoenegrachtsPXL\target\apache-tomee\lib\openejb-javaagent.jar
+20-May-2020 11:04:14.058 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-May-2020 11:04:14.058 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Djava.io.tmpdir=C:\Users\Jurgen\source\repos\budgetplannerusecase-JurgenCoenegrachtsPXL\target\apache-tomee\temp
+20-May-2020 11:04:14.058 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dcatalina.base=C:\Users\Jurgen\source\repos\budgetplannerusecase-JurgenCoenegrachtsPXL\target\apache-tomee
+20-May-2020 11:04:14.058 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dcatalina.home=C:\Users\Jurgen\source\repos\budgetplannerusecase-JurgenCoenegrachtsPXL\target\apache-tomee
+20-May-2020 11:04:14.058 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dcatalina.ext.dirs=C:\Users\Jurgen\source\repos\budgetplannerusecase-JurgenCoenegrachtsPXL\target\apache-tomee\lib
+20-May-2020 11:04:14.058 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dorg.apache.tomcat.util.http.ServerCookie.ALLOW_HTTP_SEPARATORS_IN_V0=true
+20-May-2020 11:04:14.059 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -ea
+20-May-2020 11:04:14.059 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.5\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\Games\Gamemakerstuff\Windows-SDK\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\PuTTY\;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Gpg4win\..\GnuPG\bin;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Jurgen\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\Jurgen\AppData\Local\Programs\Python\Python37\;C:\Users\Jurgen\AppData\Local\Microsoft\WindowsApps;C:\Users\Jurgen\AppData\Local\GitHubDesktop\bin;C:\Users\Jurgen\AppData\Roaming\npm;C:\Users\Jurgen\.dotnet\tools;C:\Users\Jurgen\AppData\Local\Microsoft\WindowsApps;G:\Documents\2019-2020\Web Advanced\php interpreter;C:\Users\Jurgen\AppData\Roaming\Composer\vendor\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\plugins\maven\lib\maven3\bin;C:\Program Files\Java\jdk-11.0.5\bin;C:\sonarqube\msbuild;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin;;.]
+20-May-2020 11:04:14.317 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Initializing ProtocolHandler ["http-nio-8080"]
+20-May-2020 11:04:14.537 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Initializing ProtocolHandler ["ajp-nio-8009"]
+20-May-2020 11:04:14.714 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'tomee.remote.support=true'
+20-May-2020 11:04:14.720 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'openejb.jdbc.datasource-creator=org.apache.tomee.jdbc.TomEEDataSourceCreator'
+20-May-2020 11:04:14.790 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> ********************************************************************************
+20-May-2020 11:04:14.790 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> OpenEJB http://tomee.apache.org/
+20-May-2020 11:04:14.790 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Startup: Wed May 20 11:04:14 CEST 2020
+20-May-2020 11:04:14.790 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Copyright 1999-2018 (C) Apache OpenEJB Project, All Rights Reserved.
+20-May-2020 11:04:14.790 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Version: 8.0.1
+20-May-2020 11:04:14.790 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Build date: 20200107
+20-May-2020 11:04:14.790 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Build time: 02:43
+20-May-2020 11:04:14.790 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> ********************************************************************************
+20-May-2020 11:04:14.790 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> openejb.home = C:\Users\Jurgen\source\repos\budgetplannerusecase-JurgenCoenegrachtsPXL\target\apache-tomee
+20-May-2020 11:04:14.790 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> openejb.base = C:\Users\Jurgen\source\repos\budgetplannerusecase-JurgenCoenegrachtsPXL\target\apache-tomee
+20-May-2020 11:04:14.792 INFO [main] org.apache.openejb.cdi.CdiBuilder.initializeOWB Created new singletonService org.apache.openejb.cdi.ThreadSingletonServiceImpl@56c698e3
+20-May-2020 11:04:14.794 INFO [main] org.apache.openejb.cdi.CdiBuilder.initializeOWB Succeeded in installing singleton service
+20-May-2020 11:04:14.816 INFO [main] org.apache.openejb.config.ConfigurationFactory.init TomEE configuration file is 'C:\Users\Jurgen\source\repos\budgetplannerusecase-JurgenCoenegrachtsPXL\target\apache-tomee\conf\tomee.xml'
+20-May-2020 11:04:14.840 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Tomcat Security Service, type=SecurityService, provider-id=Tomcat Security Service)
+20-May-2020 11:04:14.845 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Transaction Manager, type=TransactionManager, provider-id=Default Transaction Manager)
+20-May-2020 11:04:14.846 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'openejb.system.apps=false'
+20-May-2020 11:04:14.846 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'openejb.deployments.classpath=false'
+20-May-2020 11:04:14.849 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating TransactionManager(id=Default Transaction Manager)
+20-May-2020 11:04:14.886 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating SecurityService(id=Tomcat Security Service)
+20-May-2020 11:04:14.973 INFO [main] org.apache.openejb.server.ServiceManager.initServer Creating ServerService(id=cxf-rs)
+20-May-2020 11:04:15.132 INFO [main] org.apache.openejb.server.SimpleServiceManager.start   ** Bound Services **
+20-May-2020 11:04:15.132 INFO [main] org.apache.openejb.server.SimpleServiceManager.printRow   NAME                 IP              PORT  
+20-May-2020 11:04:15.132 INFO [main] org.apache.openejb.server.SimpleServiceManager.start -------
+20-May-2020 11:04:15.132 INFO [main] org.apache.openejb.server.SimpleServiceManager.start Ready!
+20-May-2020 11:04:15.132 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Server initialization in [1,268] milliseconds
+20-May-2020 11:04:15.168 INFO [main] org.apache.tomee.catalina.OpenEJBNamingContextListener.bindResource Importing a Tomcat Resource with id 'UserDatabase' of type 'org.apache.catalina.UserDatabase'.
+20-May-2020 11:04:15.168 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Resource(id=UserDatabase)
+20-May-2020 11:04:15.185 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Starting service [Catalina]
+20-May-2020 11:04:15.185 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Starting Servlet engine: [Apache Tomcat (TomEE)/9.0.30 (8.0.1)]
+20-May-2020 11:04:15.199 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Deploying web application archive [C:\Users\Jurgen\source\repos\budgetplannerusecase-JurgenCoenegrachtsPXL\target\apache-tomee\webapps\BudgetPlanner.war]
+20-May-2020 11:04:15.210 INFO [main] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /BudgetPlanner
+20-May-2020 11:04:15.212 INFO [main] org.apache.openejb.util.JarExtractor.extract Extracting jar: C:\Users\Jurgen\source\repos\budgetplannerusecase-JurgenCoenegrachtsPXL\target\apache-tomee\webapps\BudgetPlanner.war
+20-May-2020 11:04:15.674 INFO [main] org.apache.openejb.util.JarExtractor.extract Extracted path: C:\Users\Jurgen\source\repos\budgetplannerusecase-JurgenCoenegrachtsPXL\target\apache-tomee\webapps\BudgetPlanner
+20-May-2020 11:04:15.675 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'openejb.session.manager=org.apache.tomee.catalina.session.QuickSessionManager'
+20-May-2020 11:04:16.298 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: C:\Users\Jurgen\source\repos\budgetplannerusecase-JurgenCoenegrachtsPXL\target\apache-tomee\webapps\BudgetPlanner
+20-May-2020 11:04:16.402 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Managed Container, type=Container, provider-id=Default Managed Container)
+20-May-2020 11:04:16.402 INFO [main] org.apache.openejb.config.AutoConfig.createContainer Auto-creating a container for bean BudgetPlanner.Comp2076462312: Container(type=MANAGED, id=Default Managed Container)
+20-May-2020 11:04:16.402 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Container(id=Default Managed Container)
+20-May-2020 11:04:16.408 INFO [main] org.apache.openejb.core.managed.SimplePassivater.init Using directory C:\Users\Jurgen\source\repos\budgetplannerusecase-JurgenCoenegrachtsPXL\target\apache-tomee\temp for stateful session passivation
+20-May-2020 11:04:16.417 INFO [main] org.apache.openejb.config.AutoConfig.deploy Configuring PersistenceUnit(name=budgetplanner_pu)
+20-May-2020 11:04:16.418 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default JDBC Database, type=Resource, provider-id=Default JDBC Database)
+20-May-2020 11:04:16.418 INFO [main] org.apache.openejb.config.AutoConfig.logAutoCreateResource Auto-creating a Resource with id 'Default JDBC Database' of type 'DataSource for 'budgetplanner_pu'.
+20-May-2020 11:04:16.418 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Resource(id=Default JDBC Database)
+20-May-2020 11:04:16.629 INFO [main] org.hsqldb.persist.Logger.logInfoEvent Checkpoint start
+20-May-2020 11:04:16.630 INFO [main] org.hsqldb.persist.Logger.logInfoEvent checkpointClose start
+20-May-2020 11:04:16.657 INFO [main] org.hsqldb.persist.Logger.logInfoEvent checkpointClose end
+20-May-2020 11:04:16.658 INFO [main] org.hsqldb.persist.Logger.logInfoEvent Checkpoint end - txts: 1
+20-May-2020 11:04:16.679 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Unmanaged JDBC Database, type=Resource, provider-id=Default Unmanaged JDBC Database)
+20-May-2020 11:04:16.679 INFO [main] org.apache.openejb.config.AutoConfig.logAutoCreateResource Auto-creating a Resource with id 'Default Unmanaged JDBC Database' of type 'DataSource for 'budgetplanner_pu'.
+20-May-2020 11:04:16.679 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Resource(id=Default Unmanaged JDBC Database)
+20-May-2020 11:04:16.689 INFO [main] org.apache.openejb.config.AutoConfig.setJtaDataSource Adjusting PersistenceUnit budgetplanner_pu <jta-data-source> to Resource ID 'Default JDBC Database' from 'null'
+20-May-2020 11:04:16.690 INFO [main] org.apache.openejb.config.AutoConfig.setNonJtaDataSource Adjusting PersistenceUnit budgetplanner_pu <non-jta-data-source> to Resource ID 'Default Unmanaged JDBC Database' from 'null'
+20-May-2020 11:04:16.708 INFO [main] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "C:\Users\Jurgen\source\repos\budgetplannerusecase-JurgenCoenegrachtsPXL\target\apache-tomee\webapps\BudgetPlanner" loaded.
+20-May-2020 11:04:16.712 INFO [main] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: C:\Users\Jurgen\source\repos\budgetplannerusecase-JurgenCoenegrachtsPXL\target\apache-tomee\webapps\BudgetPlanner
+20-May-2020 11:04:16.945 INFO [main] null.openjpa.Runtime OpenJPA dynamically loaded a validation provider.
+20-May-2020 11:04:16.957 INFO [main] org.apache.openejb.assembler.classic.ReloadableEntityManagerFactory.createDelegate PersistenceUnit(name=budgetplanner_pu, provider=org.apache.openjpa.persistence.PersistenceProviderImpl) - provider time 230ms
+20-May-2020 11:04:17.002 INFO [main] org.apache.openejb.cdi.CdiBuilder.initSingleton Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@56c698e3
+20-May-2020 11:04:17.059 INFO [main] org.apache.openejb.cdi.ManagedSecurityService.<init> Some Principal APIs could not be loaded: org.eclipse.microprofile.jwt.JsonWebToken out of org.eclipse.microprofile.jwt.JsonWebToken not found
+20-May-2020 11:04:17.079 INFO [main] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container is starting...
+20-May-2020 11:04:17.083 INFO [main] org.apache.webbeans.plugins.PluginLoader.startUp Adding OpenWebBeansPlugin : [CdiPlugin]
+20-May-2020 11:04:17.449 INFO [main] org.apache.webbeans.config.BeansDeployer.validateInjectionPoints All injection points were validated successfully.
+20-May-2020 11:04:17.463 INFO [main] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container has started, it took 384 ms.
+20-May-2020 11:04:17.467 INFO [main] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=C:\Users\Jurgen\source\repos\budgetplannerusecase-JurgenCoenegrachtsPXL\target\apache-tomee\webapps\BudgetPlanner)
+20-May-2020 11:04:17.580 INFO [main] org.apache.myfaces.ee.MyFacesContainerInitializer.onStartup Using org.apache.myfaces.ee.MyFacesContainerInitializer
+20-May-2020 11:04:17.607 INFO [main] org.apache.myfaces.ee.MyFacesContainerInitializer.onStartup Added FacesServlet with mappings=[/faces/*, *.jsf, *.faces, *.xhtml]
+20-May-2020 11:04:17.628 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-May-2020 11:04:17.636 INFO [main] org.apache.tomee.myfaces.TomEEMyFacesContainerInitializer.addListener Installing <listener>org.apache.myfaces.webapp.StartupServletContextListener</listener>
+20-May-2020 11:04:23.884 INFO [main] null.openjpa.Runtime OpenJPA dynamically loaded a validation provider.
+20-May-2020 11:04:23.937 INFO [main] org.apache.myfaces.config.DefaultFacesConfigurationProvider.getStandardFacesConfig Reading standard config META-INF/standard-faces-config.xml
+20-May-2020 11:04:24.101 INFO [main] org.apache.myfaces.config.DefaultFacesConfigurationProvider.getClassloaderFacesConfig Reading config : jar:file:/C:/Users/Jurgen/source/repos/budgetplannerusecase-JurgenCoenegrachtsPXL/target/apache-tomee/lib/openwebbeans-el22-2.0.12.jar!/META-INF/faces-config.xml
+20-May-2020 11:04:24.102 INFO [main] org.apache.myfaces.config.DefaultFacesConfigurationProvider.getClassloaderFacesConfig Reading config : jar:file:/C:/Users/Jurgen/source/repos/budgetplannerusecase-JurgenCoenegrachtsPXL/target/apache-tomee/lib/openwebbeans-jsf-2.0.12.jar!/META-INF/faces-config.xml
+20-May-2020 11:04:24.175 INFO [main] org.apache.myfaces.config.LogMetaInfUtils.logArtifact Artifact 'myfaces-api' was found in version '2.3.6' from path 'file:/C:/Users/Jurgen/source/repos/budgetplannerusecase-JurgenCoenegrachtsPXL/target/apache-tomee/lib/myfaces-api-2.3.6.jar'
+20-May-2020 11:04:24.175 INFO [main] org.apache.myfaces.config.LogMetaInfUtils.logArtifact Artifact 'myfaces-impl' was found in version '2.3.6' from path 'file:/C:/Users/Jurgen/source/repos/budgetplannerusecase-JurgenCoenegrachtsPXL/target/apache-tomee/lib/myfaces-impl-2.3.6.jar'
+20-May-2020 11:04:24.185 INFO [main] org.apache.myfaces.util.ExternalSpecifications.isCDIAvailable MyFaces CDI support enabled
+20-May-2020 11:04:24.186 INFO [main] org.apache.myfaces.spi.impl.DefaultInjectionProviderFactory.getInjectionProvider Using InjectionProvider org.apache.myfaces.spi.impl.CDIAnnotationDelegateInjectionProvider
+20-May-2020 11:04:24.226 INFO [main] org.apache.myfaces.util.ExternalSpecifications.isBeanValidationAvailable MyFaces Bean Validation support enabled
+20-May-2020 11:04:24.424 INFO [main] org.apache.myfaces.application.ApplicationImpl.getProjectStage Couldn't discover the current project stage, using Production
+20-May-2020 11:04:24.424 INFO [main] org.apache.myfaces.config.FacesConfigurator.handleSerialFactory Serialization provider : class org.apache.myfaces.shared_impl.util.serial.DefaultSerialFactory
+20-May-2020 11:04:24.429 INFO [main] org.apache.myfaces.config.annotation.DefaultLifecycleProviderFactory.getLifecycleProvider Using LifecycleProvider org.apache.myfaces.config.annotation.Tomcat7AnnotationLifecycleProvider
+20-May-2020 11:04:24.464 INFO [main] org.apache.myfaces.webapp.AbstractFacesInitializer.initFaces ServletContext initialized.
+20-May-2020 11:04:24.467 INFO [main] org.apache.myfaces.view.facelets.ViewPoolProcessor.initialize org.apache.myfaces.CACHE_EL_EXPRESSIONS web config parameter is set to "noCache". To enable view pooling this param must be set to "alwaysRecompile". View Pooling disabled.
+20-May-2020 11:04:24.477 INFO [main] org.apache.myfaces.webapp.StartupServletContextListener.contextInitialized MyFaces Core has started, it took [592] ms.
+20-May-2020 11:04:24.607 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication Using readers:
+20-May-2020 11:04:24.607 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.PrimitiveTextProvider@75f446df
+20-May-2020 11:04:24.607 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.FormEncodingProvider@d863bb
+20-May-2020 11:04:24.607 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.MultipartProvider@76ebd595
+20-May-2020 11:04:24.607 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.SourceProvider@4560eb15
+20-May-2020 11:04:24.607 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.JAXBElementTypedProvider@225fb75e
+20-May-2020 11:04:24.607 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.JAXBElementProvider@61d9dd15
+20-May-2020 11:04:24.607 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.johnzon.TomEEJsonbProvider@943cf5
+20-May-2020 11:04:24.607 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.johnzon.TomEEJsonpProvider@3751baf6
+20-May-2020 11:04:24.607 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.StringTextProvider@27e656e6
+20-May-2020 11:04:24.607 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.BinaryDataProvider@3cfab56d
+20-May-2020 11:04:24.607 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.DataSourceProvider@6b6fde93
+20-May-2020 11:04:24.607 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication Using writers:
+20-May-2020 11:04:24.607 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.johnzon.jaxrs.WadlDocumentMessageBodyWriter@51d34f02
+20-May-2020 11:04:24.607 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.nio.NioMessageBodyWriter@441762b8
+20-May-2020 11:04:24.607 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.StringTextProvider@27e656e6
+20-May-2020 11:04:24.607 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.JAXBElementTypedProvider@225fb75e
+20-May-2020 11:04:24.607 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.PrimitiveTextProvider@75f446df
+20-May-2020 11:04:24.607 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.FormEncodingProvider@d863bb
+20-May-2020 11:04:24.607 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.MultipartProvider@76ebd595
+20-May-2020 11:04:24.608 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.SourceProvider@4560eb15
+20-May-2020 11:04:24.608 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.JAXBElementProvider@61d9dd15
+20-May-2020 11:04:24.608 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.johnzon.TomEEJsonbProvider@943cf5
+20-May-2020 11:04:24.608 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.johnzon.TomEEJsonpProvider@3751baf6
+20-May-2020 11:04:24.608 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.BinaryDataProvider@3cfab56d
+20-May-2020 11:04:24.608 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.DataSourceProvider@6b6fde93
+20-May-2020 11:04:24.608 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication Using exception mappers:
+20-May-2020 11:04:24.608 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.impl.WebApplicationExceptionMapper@561c031
+20-May-2020 11:04:24.608 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.EJBExceptionMapper@4e0139
+20-May-2020 11:04:24.608 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.validation.ValidationExceptionMapper@7343d843
+20-May-2020 11:04:24.609 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints REST Application: http://localhost:8080/BudgetPlanner/                                        -> org.apache.openejb.server.rest.InternalApplication@28200d43
+20-May-2020 11:04:24.611 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints      Service URI: http://localhost:8080/BudgetPlanner/api/accounts                            -> Pojo be.pxl.student.rest.AccountRest
+20-May-2020 11:04:24.611 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints               GET http://localhost:8080/BudgetPlanner/api/accounts/{accountName}              ->      Response getPayments(String, String)              
+20-May-2020 11:04:24.611 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints              POST http://localhost:8080/BudgetPlanner/api/accounts                            ->      Response CreateAccount(NewAccountResource)        
+20-May-2020 11:04:24.611 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints              POST http://localhost:8080/BudgetPlanner/api/accounts/{accountName}              ->      Response createPayment(String, NewPaymentResource)
+20-May-2020 11:04:24.612 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints      Service URI: http://localhost:8080/BudgetPlanner/api/labels                              -> Pojo be.pxl.student.rest.LabelRest  
+20-May-2020 11:04:24.612 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints            DELETE http://localhost:8080/BudgetPlanner/api/labels/{labelId}                    ->      Response deleteLabel(int)        
+20-May-2020 11:04:24.612 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints               GET http://localhost:8080/BudgetPlanner/api/labels                              ->      Response getAll()                
+20-May-2020 11:04:24.612 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints              POST http://localhost:8080/BudgetPlanner/api/labels                              ->      Response addNew(NewLabelResource)
+20-May-2020 11:04:24.612 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints      Service URI: http://localhost:8080/BudgetPlanner/api/payments                            -> Pojo be.pxl.student.rest.PaymentRest
+20-May-2020 11:04:24.612 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints            DELETE http://localhost:8080/BudgetPlanner/api/payments/{paymentId}                ->      Response linkPaymentLabel(int)     
+20-May-2020 11:04:24.612 INFO [main] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints              POST http://localhost:8080/BudgetPlanner/api/payments/{paymentId}/link/{labelId} ->      Response linkPaymentLabel(int, int)
+20-May-2020 11:04:24.631 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Deployment of web application archive [C:\Users\Jurgen\source\repos\budgetplannerusecase-JurgenCoenegrachtsPXL\target\apache-tomee\webapps\BudgetPlanner.war] has finished in [9,432] ms
+20-May-2020 11:04:24.640 INFO [main] org.apache.catalina.core.StandardContext.setClassLoaderProperty Unable to set the web application class loader property [clearReferencesRmiTargets] to [true] as the property does not exist.
+20-May-2020 11:04:24.641 INFO [main] org.apache.catalina.core.StandardContext.setClassLoaderProperty Unable to set the web application class loader property [clearReferencesObjectStreamClassCaches] to [true] as the property does not exist.
+20-May-2020 11:04:24.641 INFO [main] org.apache.catalina.core.StandardContext.setClassLoaderProperty Unable to set the web application class loader property [clearReferencesObjectStreamClassCaches] to [true] as the property does not exist.
+20-May-2020 11:04:24.641 INFO [main] org.apache.catalina.core.StandardContext.setClassLoaderProperty Unable to set the web application class loader property [clearReferencesThreadLocals] to [true] as the property does not exist.
+20-May-2020 11:04:24.647 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Starting ProtocolHandler ["http-nio-8080"]
+20-May-2020 11:04:24.653 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Starting ProtocolHandler ["ajp-nio-8009"]
+20-May-2020 11:04:24.656 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Server startup in [9,523] milliseconds

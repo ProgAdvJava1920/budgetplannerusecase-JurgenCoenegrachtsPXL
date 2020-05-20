@@ -16,6 +16,10 @@ public class Label {
     public Label() {
     }
 
+    public Label(String name) {
+        this.name = name;
+    }
+
     public Label(String name, String description) {
         this.name = name;
         this.description = description;

@@ -3,11 +3,13 @@ C:\Users\Jurgen\source\repos\budgetplannerusecase-JurgenCoenegrachtsPXL\src\main
 C:\Users\Jurgen\source\repos\budgetplannerusecase-JurgenCoenegrachtsPXL\src\main\java\be\pxl\student\BudgetPlanner.java
 C:\Users\Jurgen\source\repos\budgetplannerusecase-JurgenCoenegrachtsPXL\src\main\java\be\pxl\student\rest\PaymentRest.java
 C:\Users\Jurgen\source\repos\budgetplannerusecase-JurgenCoenegrachtsPXL\src\main\java\be\pxl\student\util\BudgetPlannerException.java
+C:\Users\Jurgen\source\repos\budgetplannerusecase-JurgenCoenegrachtsPXL\src\main\java\be\pxl\student\rest\resource\NewLabelResource.java
 C:\Users\Jurgen\source\repos\budgetplannerusecase-JurgenCoenegrachtsPXL\src\main\java\be\pxl\student\entity\Label.java
 C:\Users\Jurgen\source\repos\budgetplannerusecase-JurgenCoenegrachtsPXL\src\main\java\be\pxl\student\util\BudgetPlannerImporter.java
 C:\Users\Jurgen\source\repos\budgetplannerusecase-JurgenCoenegrachtsPXL\src\main\java\be\pxl\student\entity\DAO.java
 C:\Users\Jurgen\source\repos\budgetplannerusecase-JurgenCoenegrachtsPXL\src\main\java\be\pxl\student\entity\jpa\AccountJPA.java
 C:\Users\Jurgen\source\repos\budgetplannerusecase-JurgenCoenegrachtsPXL\src\main\java\be\pxl\student\rest\resource\AccountResource.java
+C:\Users\Jurgen\source\repos\budgetplannerusecase-JurgenCoenegrachtsPXL\src\main\java\be\pxl\student\rest\LabelRest.java
 C:\Users\Jurgen\source\repos\budgetplannerusecase-JurgenCoenegrachtsPXL\src\main\java\be\pxl\student\entity\exception\AccountException.java
 C:\Users\Jurgen\source\repos\budgetplannerusecase-JurgenCoenegrachtsPXL\src\main\java\be\pxl\student\rest\resource\PaymentResource.java
 C:\Users\Jurgen\source\repos\budgetplannerusecase-JurgenCoenegrachtsPXL\src\main\java\be\pxl\student\entity\exception\LabelNotFoundException.java
