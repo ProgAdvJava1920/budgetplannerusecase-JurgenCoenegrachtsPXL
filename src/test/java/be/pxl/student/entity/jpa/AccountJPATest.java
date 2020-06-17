@@ -16,9 +16,9 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AccountJPATest {
-    DAO<Account, AccountException> dao;
-    EntityManager entityManager;
-    EntityManagerFactory entityManagerFactory;
+    private DAO<Account, AccountException> dao;
+    private EntityManager entityManager;
+    private EntityManagerFactory entityManagerFactory;
 
     @BeforeEach
     void setup() {

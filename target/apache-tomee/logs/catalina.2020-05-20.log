@@ -161,3 +161,23 @@
 20-May-2020 11:04:24.647 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Starting ProtocolHandler ["http-nio-8080"]
 20-May-2020 11:04:24.653 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Starting ProtocolHandler ["ajp-nio-8009"]
 20-May-2020 11:04:24.656 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Server startup in [9,523] milliseconds
+20-May-2020 11:16:55.835 INFO [Thread-34] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Pausing ProtocolHandler ["http-nio-8080"]
+20-May-2020 11:16:55.837 INFO [main] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+20-May-2020 11:16:56.021 INFO [Thread-34] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Pausing ProtocolHandler ["ajp-nio-8009"]
+20-May-2020 11:16:56.189 INFO [Thread-34] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Stopping service [Catalina]
+20-May-2020 11:16:56.207 INFO [Thread-34] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: C:\Users\Jurgen\source\repos\budgetplannerusecase-JurgenCoenegrachtsPXL\target\apache-tomee\webapps\BudgetPlanner
+20-May-2020 11:16:56.256 WARNING [Thread-34] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [BudgetPlanner] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+20-May-2020 11:16:56.257 WARNING [Thread-34] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [BudgetPlanner] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.5/java.lang.Object.wait(Native Method)
+ java.base@11.0.5/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:64)
+ java.base@11.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+ java.base@11.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.5/java.lang.Thread.run(Thread.java:834)
+20-May-2020 11:16:56.262 INFO [Thread-34] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Stopping ProtocolHandler ["http-nio-8080"]
+20-May-2020 11:16:56.263 INFO [Thread-34] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Stopping ProtocolHandler ["ajp-nio-8009"]
+20-May-2020 11:16:56.264 INFO [Thread-34] org.apache.openejb.server.SimpleServiceManager.stop Stopping server services
+20-May-2020 11:16:56.271 INFO [Thread-34] org.apache.openejb.assembler.classic.Assembler.doResourceDestruction Closing DataSource: Default JDBC Database
+20-May-2020 11:16:56.272 INFO [Thread-34] org.apache.openejb.assembler.classic.Assembler.doResourceDestruction Closing DataSource: Default Unmanaged JDBC Database
+20-May-2020 11:16:56.279 INFO [Thread-34] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Destroying ProtocolHandler ["http-nio-8080"]
+20-May-2020 11:16:56.280 INFO [Thread-34] jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke Destroying ProtocolHandler ["ajp-nio-8009"]

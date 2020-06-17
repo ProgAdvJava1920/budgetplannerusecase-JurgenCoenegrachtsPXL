@@ -63,10 +63,11 @@ public class LabelJPA implements DAO<Label, LabelException> {
     @Override
     public Label delete(Label label) throws LabelException {
         // check if label is in use
-        Query query = entityManager.createQuery("SELECT p FROM Payment WHERE p.label.id =  :labelId", Payment.class);
+        //Query query = entityManager.createQuery("SELECT p FROM Payment AS p WHERE p.label.id=:labelId", Payment.class);
+        Query query = entityManager.createNativeQuery("SELECT p.id FROM Payment p WHERE p.labelId=:labelId");
         query.setParameter("labelId", label.getId());
         if (query.getResultList().size() > 0) {
-            throw new LabelException(String.format("Label [%S] is in use. Remove the payments first or change their label."));
+            throw new LabelException(String.format("Label [%S] is in use. Remove the payments first or change their label.", label.getName()));
         }
 
         EntityTransaction transaction = entityManager.getTransaction();

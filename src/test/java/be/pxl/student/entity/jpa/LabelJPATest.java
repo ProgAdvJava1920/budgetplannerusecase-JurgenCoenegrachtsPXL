@@ -16,9 +16,9 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 class LabelJPATest {
-    DAO<Label, LabelException> dao;
-    EntityManager entityManager;
-    EntityManagerFactory entityManagerFactory;
+    private DAO<Label, LabelException> dao;
+    private EntityManager entityManager;
+    private EntityManagerFactory entityManagerFactory;
 
     @BeforeEach
     void setup() {
